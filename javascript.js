@@ -13,4 +13,18 @@ window.addEventListener('DOMContentLoaded', function() {
   
     setInterval(changeImage, 5000);
   });
+
+  function showContent(index) {
+    const contentItems = document.getElementsByClassName('content-item');
+    const buttons = document.getElementsByTagName('button');
   
+    for (let i = 0; i < contentItems.length; i++) {
+      contentItems[i].classList.remove('active');
+      buttons[i].classList.remove('active');
+    }
+  
+    contentItems[index].classList.add('active');
+    buttons[index].classList.add('active');
+  }
+  
+  showContent(0);
