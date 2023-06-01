@@ -1,18 +1,58 @@
 #background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+  }
+  
+  #background-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: fixed;
-    top: 15%;
+    
+  }
+  
+  #background-images img {
+    position: absolute;
+    top: 0;
     left: 0;
     width: 100%;
-    height: 80vh;
-    z-index: -1;
-    overflow: hidden;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
   }
   
-  #background-container img {
-    max-width: 100%;
-    max-height: 100%;
+  #content {
+    /* Pozostała zawartości strony */
+    position: relative;
+    z-index: 1;
+  }
+
+  #mainmenu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 100%;
+    background-color: rgba(192, 192, 192, 0.5);
   }
   
+  .logo {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 44px;
+    color: #f6f6f6;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
