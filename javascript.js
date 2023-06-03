@@ -1,3 +1,4 @@
+/* Change image in background */
 window.addEventListener('DOMContentLoaded', function() {
     let images = document.querySelectorAll('#background-images img');
     let currentIndex = 0;
@@ -14,6 +15,7 @@ window.addEventListener('DOMContentLoaded', function() {
     setInterval(changeImage, 5000);
   });
 
+  /* Choose and show section from 3 main */
   function showContent(index) {
     const contentItems = document.getElementsByClassName('content-item');
     const buttons = document.getElementsByTagName('button');
@@ -29,6 +31,7 @@ window.addEventListener('DOMContentLoaded', function() {
   
   showContent(0);
 
+  /* Show or hide menu */
   function toggleMenu() {
     const menu = document.getElementById("mainmenu");
     const buttons = document.getElementById("button-container");
@@ -36,3 +39,4 @@ window.addEventListener('DOMContentLoaded', function() {
     menu.classList.toggle("menu-open");
     buttons.classList.toggle("hide-buttons");
   }
+  

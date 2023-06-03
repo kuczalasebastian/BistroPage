@@ -42,21 +42,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%; /* Zmieniono szerokość na 100% */
-    max-width: 60%; /* Dodano maksymalną szerokość */
+    width: 100%;
+    max-width: 60%; 
     min-height: 100%;
     max-height: 100%;
     background-color: rgba(247, 245, 245, 0.6);
     overflow: auto;
-  }
-
-  @media screen and (max-width:450px) {
-    #mainmenu {
-      min-width: 100%;
-      max-width: 100%;
-      padding: 0% 2%;
-    }
-    
   }
   
   .logo {
@@ -68,13 +59,7 @@
     font-size: 44px;
     color: #f6f6f6;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    margin-bottom: 10px; /* Domyślny odstęp */
-  }
-
-  @media screen and (max-width: 768px) {
-    .logo {
-      margin-bottom: 5px; /* Mniejszy odstęp na mniejszych ekranach */
-    }
+    margin-bottom: 10px; 
   }
 
   .logo span {
@@ -167,7 +152,9 @@
     margin-right: 10px;
   }
 
-  @media screen and (max-width: 789px) {
+    /* Media below 600 */
+
+  @media screen and (max-width: 600px) {
     .menu-item {
       display: none;
     }
@@ -198,10 +185,76 @@
       display: block;
       margin: 10px;
     }
-  }
 
-  @media (max-width: 789px) {
     .hide-buttons {
       display: none;
     }
+
+    .logo {
+        margin-bottom: 5px;
+    }
+
+    #mainmenu {
+      width: 99%;
+      max-width: 99%;
+      padding: 0% 2%;
+    }
+  }
+
+  /* General article */
+
+  body{
+    margin:0;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #container{
+    max-width: 100%;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 30px black;
+  }
+
+  /* main */
+  main{
+    display: flex;
+  }
+  
+  article{
+    width: 70%;
+    padding: 30px;
+  }
+  
+  /* Aside */
+  aside{
+    width: 30%;
+    padding: 20px;
+    background-color: lightgrey;
+    border-left: 2px solid black;
+  }
+  
+  .widget{
+    margin-bottom: 40px;
+  }
+  
+  .widget img{
+    float: left;
+    margin: 0 10px 5px 0;
+  }
+  
+  .links ul{
+    list-style-type: square;
+    margin:0;
+    padding-left: 18px;
+  }
+  
+  .links ul li{
+    margin-bottom: 10px;
   }
