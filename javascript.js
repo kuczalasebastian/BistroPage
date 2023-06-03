@@ -28,3 +28,11 @@ window.addEventListener('DOMContentLoaded', function() {
   }
   
   showContent(0);
+
+  function toggleMenu() {
+    const menu = document.getElementById("mainmenu");
+    const buttons = document.getElementById("button-container");
+
+    menu.classList.toggle("menu-open");
+    buttons.classList.toggle("hide-buttons");
+  }
