@@ -152,6 +152,14 @@
     margin-right: 10px;
   }
 
+  .show-button {
+    display: block;
+  }
+
+  .hide-button {
+    display: none;
+  }
+
     /* Media below 600 */
 
   @media screen and (max-width: 600px) {
@@ -198,6 +206,14 @@
       width: 99%;
       max-width: 99%;
       padding: 0% 2%;
+    }
+    
+    .show-button {
+      display: none;
+    }
+  
+    .hide-button {
+      display: block;
     }
   }
 

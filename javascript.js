@@ -24,11 +24,9 @@ window.addEventListener('DOMContentLoaded', function() {
       contentItems[i].classList.remove('active');
       buttons[i].classList.remove('active');
     }
-  
     contentItems[index].classList.add('active');
     buttons[index].classList.add('active');
   }
-  
   showContent(0);
 
   /* Show or hide menu */
@@ -37,6 +35,7 @@ window.addEventListener('DOMContentLoaded', function() {
     const buttons = document.getElementById("button-container");
 
     menu.classList.toggle("menu-open");
-    buttons.classList.toggle("hide-buttons");
+    buttons.classList.toggle("show-button");
+    buttons.classList.toggle("hide-button");
   }
   
