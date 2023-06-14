@@ -244,13 +244,14 @@
   }
   
   article{
-    width: 70%;
+    max-width: 100%;
     padding: 30px;
+    justify-content: space-between;
   }
   
   /* Aside */
   aside{
-    width: 30%;
+    width: 29vw;
     padding: 20px;
     background-color: lightgrey;
     border-left: 2px solid black;
@@ -273,4 +274,26 @@
   
   .links ul li{
     margin-bottom: 10px;
+  }
+
+
+  iframe {
+    max-width: 100%;
+  }
+
+  .contact-info {
+    font-weight: bold;
+    flex-direction: column;
+    text-align:  left;
+  }
+
+  .contact-info span {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
   }
