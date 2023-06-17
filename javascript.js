@@ -27,7 +27,6 @@ window.addEventListener('DOMContentLoaded', function() {
     contentItems[index].classList.add('active');
     buttons[index].classList.add('active');
   }
-  showContent(0);
 
   /* Show or hide menu */
   function toggleMenu() {
